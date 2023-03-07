@@ -31,3 +31,64 @@ Copy the smaller label
 Update the equivalence table.
   + Otherwise, assign a new label.
 - Re-label with the smallest of equivalent labels
+
+## Lab 4
+### Lab Title: Image Transformation Techniques
+
+### Introduction:
+In this lab, we will learn about various image transformation techniques that can be applied to digital images to modify their visual appearance. These techniques include negative transformation, log transformation, pixel value transformation, power law transformation, gray level slicing, and histogram calculation.
+
+### Requirements:
+
+- Python programming language
+- OpenCV library for image processing
+- Numpy library for array manipulation
+### Task 1: Negative Transformation
+
+- Load the image using OpenCV imread() function
+- Convert the image to grayscale using cvtColor() function
+- Apply negative transformation using the formula: new_pixel_value = 255 - old_pixel_value
+- Display the output image using imshow() function
+- Save the output image using imwrite() function
+### Task 2: Log Transformation
+
+- Load the image using OpenCV imread() function
+- Convert the image to grayscale using cvtColor() function
+- Apply log transformation using the formula: new_pixel_value = c * log(1 + old_pixel_value)
+(where c is a constant and can be adjusted to control the brightness of the output image)
+- Display the output image using imshow() function
+- Save the output image using imwrite() function
+### Task 3: Pixel Value Transformation
+
+- Load the image using OpenCV imread() function
+- Convert the image to grayscale using cvtColor() function
+- Apply pixel value transformation using the following rules:
+- For pixel values less than mean: set output pixel value to 0 or 255 (depending on the task)
+- For pixel values greater than mean: set output pixel value to 0 or 255 (depending on the task)
+- For pixel values within a range of ±20 mean: set output pixel value to 0 or 255 (depending on the task)
+- For all other pixel values: set output pixel value to 0 or 255 (depending on the task)
+- Display the output image using imshow() function
+- Save the output image using imwrite() function
+### Task 4: Power Law Transformation
+
+- Load the image using OpenCV imread() function
+- Convert the image to grayscale using cvtColor() function
+- Apply power law transformation using the formula: new_pixel_value = c * (old_pixel_value ^ gamma)
+(where c is a constant and can be adjusted to control the brightness of the output image)
+- Repeat the above step for different values of gamma (0.2, 0.5, 1.2, and 1.8)
+- Display the output images using imshow() function
+- Save the output images using imwrite() function
+### Task 5: Gray Level Slicing
+
+- Load the image using OpenCV imread() function
+- Convert the image to grayscale using cvtColor() function
+- Apply gray level slicing using the lower limit of 100 and upper limit of 200
+- Set all pixel values within this range to 210
+- Display the output image using imshow() function
+- Save the output image using imwrite() function
+### Task 6: Histogram Calculation
+
+- Load the image using OpenCV imread() function
+- Convert the image to grayscale using cvtColor() function
+- Calculate the histogram of the image by iterating through all pixel values and counting their occurrences
+- Display the histogram using Matplotlib library
